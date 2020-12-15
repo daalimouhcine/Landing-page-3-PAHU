@@ -1,0 +1,172 @@
+/*----- Global -----*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration:none;
+    color:black;
+}
+/*----- Global -----*/
+
+
+
+
+/*----- Body -----*/
+body {
+
+}
+/*----- Body -----*/
+
+
+
+
+/*----- Navigation -----*/
+#navigation {
+    display:flex;
+    flex-direction:row;
+    background-color: rgb(17, 16, 16);
+    height:70px;
+    padding:0 6rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-list {
+    display:flex;
+    flex-direction: row;
+}
+#nav-list li {
+    margin:0 1rem;
+
+}
+#nav-list li a {
+    color:white;
+    text-transform:uppercase;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 2px;
+    padding:1.32rem 0;
+    border-bottom:3px solid transparent;
+    transition:border 300ms;
+}
+#nav-list li a:hover {
+    border-bottom:4px solid rgb(255, 220, 24);
+}
+
+#right-menu {
+    display:flex;
+    flex-direction:row;
+}
+#right-menu li {
+    margin:0 0.7rem;
+}
+#right-menu li img {
+    cursor: pointer;
+}
+/*----- Navigation -----*/
+
+
+
+
+/*----- Header -----*/
+#header {
+    width: 100%;
+    height:89vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/header-bg.jpg)  round;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    padding-left:10rem;
+}
+#header p {
+    color:white;
+    font-size:1.2rem;
+    font-family: sans-serif;
+}
+#header p::before {
+    content: "";
+    display:inline-block;
+    width:45px;
+    height:3.2px;
+    background-color: rgb(255, 220, 24);
+    margin:0 0.5rem 0.4rem 0;
+}
+#header p span {
+    color:rgb(255, 220, 24);
+    font-weight:500;
+}
+#header h1 {
+    width:600px;
+    color:white;
+    font-size:3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'JetBrains Mono', monospace;
+    margin-top:1.4rem;
+}
+#header h1::selection {
+    color:rgb(255, 220, 24);
+}
+/*----- Header -----*/
+
+
+
+/*----- Section Us -----*/
+#us {
+    width:100%;
+    height: 90vh;
+    background-color: rgb(17, 16, 16);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+
+}
+#us header h2 {
+    color:rgb(255, 220, 24);
+    font-size:3rem;
+    letter-spacing: 2.5px;
+    font-family: 'JetBrains Mono', monospace;
+    margin:3rem;
+}
+#us #content {
+    display: flex;
+    flex-direction:row;
+    color:white;
+
+}
+#us #content h3 {
+    color:rgb(255, 220, 24);
+    letter-spacing: 2px;
+    font-family: 'JetBrains Mono', monospace;
+}
+#us #content #float {
+    text-align: right;
+}
+#us #content .left {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+}
+#us #content .left img {
+    width:50px;
+    flex: 2;
+}
+#us #content .left p {
+    flex: 0;
+}
+#us #content .right {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+}
+#us #content .right img {
+    width:50px
+}
+
+/*----- Section Us -----*/
