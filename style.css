@@ -77,6 +77,7 @@ body {
     width: 100%;
     height:89vh;
     background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/header-bg.jpg)   scroll  round;
+    background-size: cover;
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -128,16 +129,15 @@ body {
     display: flex;
     flex-direction:column;
     align-items: center;
+    margin:2.7rem 0 2rem;
 }
 #us header h2 {
     color:rgb(255, 220, 24);
     font-size:3rem;
+    text-transform:uppercase;
     letter-spacing: 2.5px;
     font-family: 'JetBrains Mono', monospace;
     margin:0.7rem;
-}
-#us header {
-    margin:2.7rem 0 2rem;
 }
 #us header div {
     display:flex;
@@ -150,13 +150,14 @@ body {
     border-radius:100px;
     background:gray;
 }
-#us header div li {
+#us header div div {
     transform:rotate(45deg);
     background:rgb(255, 220, 24);
     height:5px;
     width:5px;
     margin:0 0.5rem;
 }
+
 #us #content {
     display: flex;
     flex-direction:row;
@@ -186,9 +187,7 @@ body {
 #us #content .left h3 {
     margin:0.9rem 0;
 }
-#us #content .left p {
 
-}
 
 #us #content .center {
     margin-top:2rem;
@@ -326,7 +325,7 @@ body {
     font-size:2rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight:500;
     top:50px;
     left:10%;
@@ -335,7 +334,7 @@ body {
     position:absolute;
     color:rgb(53, 43, 48);
     text-transform:uppercase;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     top:180px;
     left:12%;
     padding:10px;
@@ -361,8 +360,247 @@ body {
 
 /*----- Section product -----*/
 #product {
-    
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-bottom:8rem;
+    background: #f8f8f8;;
+}
+#product header {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin:2.7rem 0 4rem;
+}
+#product header h2 {
+    color:rgb(22, 22, 21);
+    font-size:3rem;
+    letter-spacing: 2.5px;
+    text-transform:uppercase;
+    font-family: 'JetBrains Mono', monospace;
+    margin:0.7rem;
 }
 
+#product header div {
+    display:flex;
+    flex-direction:row;
+}
+#product header div hr {
+    width:250px;
+    height:0.0001px;
+    border:0.0001px solid gray;
+    border-radius:100px;
+    background:rgb(22, 22, 21);
+}
+#product header div div {
+    transform:rotate(45deg);
+    background:rgb(255, 220, 24);
+    height:5px;
+    width:5px;
+    margin:0 0.5rem;
+}
+
+#chair-container {
+    width:80%;
+    height:70%;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows:350px 350px;
+    column-gap:2rem;
+    row-gap: 2rem;
+    justify-content: space-around;
+    
+}
+#chair-container .chair-product {
+    background:rgb(255, 255, 255);
+    border: 1px solid rgb(233, 232, 232);
+    border-radius:4px;
+    position:relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow:0px 0px 10px 1px rgb(228, 228, 228);
+    transition:transform 300ms;
+}
+#chair-container .chair-product:hover {
+    transform: scale(1.1);
+}
+#chair-container .chair-product img {
+    width:100%;
+}
+#chair-container .chair-product .chair-name {
+    margin:0.8rem 1rem;
+    font-size:1.2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform:uppercase;
+}
+#chair-container .chair-product .chair-description {
+    display: block;
+    margin:0rem 1rem;
+    font-size:0.9rem;
+    font-weight:300;
+    color:rgb(102, 102, 102);
+    font-family:sans-serif;
+}
+#chair-container .chair-product .chair-price  {
+    font-size:1.5rem;
+    font-weight:800;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin:1.3rem 1rem;
+}
+#chair-container .chair-product .new {
+    background: red;
+    position: absolute;
+    top:-15px;
+    left:-40px;
+    transform: rotate(-45deg);
+}
+#chair-container .chair-product .new p {
+
+    text-transform: uppercase;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding:2rem 2rem 0;
+}
 /*----- Section product -----*/
 
+
+
+/*----- Section designers -----*/
+#designers {
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/center-bg.jpg) scroll center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#designers header {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom:3rem;
+}
+#designers header h2 {
+    color:rgb(255, 220, 24);
+    font-size:3rem;
+    text-transform:uppercase;
+    letter-spacing: 2.5px;
+    font-family: 'JetBrains Mono', monospace;
+    margin:5rem 0 0.7rem;
+}
+
+#designers header div {
+    display:flex;
+    flex-direction:row;
+}
+#designers header div hr {
+    width:250px;
+    height:0.0001px;
+    border:0.0001px solid gray;
+    border-radius:100px;
+    background:gray;
+}
+#designers header div div {
+    transform:rotate(45deg);
+    background:rgb(255, 220, 24);
+    height:5px;
+    width:5px;
+    margin:0 0.5rem;
+}
+#designers-container {
+    width:60%;
+    display:grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 320px;
+    column-gap:3%;
+    margin:0 auto;
+    z-index:2;
+}
+#designers-container .designer-person {
+    position:relative;
+    
+}
+#designers-container .designer-person img {
+    display:block;
+    width:250px;
+    z-index:10;
+}
+#designers-container .designer-person b {
+    display: block;
+    margin:0.5rem 0.5rem 0 0;
+    font-size:1.1rem;
+    font-family: 'JetBrains Mono', monospace;
+    color:white;
+    width:100%;
+}
+#designers-container .designer-person b::after {
+    content:"";
+    height:3px;
+    background:rgb(255, 220, 24);
+    color:rgb(255, 220, 24);
+    display:inline-block;
+    margin:0 0 0.15rem 1rem;
+    z-index:2;
+}
+#designers-container .designer-person #b1::after {
+    width:47%;
+}
+#designers-container .designer-person #b2::after {
+    width:51%;
+}
+#designers-container .designer-person #b3::after {
+    width:59.5%;
+}
+#designers-container .designer-person .bg-bg {
+    position:absolute;
+    bottom:-15%;
+    left:-20%;
+    z-index:0;
+}
+/*----- Section designers -----*/
+
+
+
+/*----- Section Projects -----*/
+#projects {
+    width:100%;
+    height: 100vh;
+    background: rgb(243, 243, 243);
+}
+
+#projects header {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom:3rem;
+}
+#projects header h2 {
+    color:rgb(22, 22, 21);;
+    font-size:3rem;
+    text-transform:uppercase;
+    letter-spacing: 2.5px;
+    font-family: 'JetBrains Mono', monospace;
+    margin:5rem 0 0.7rem;
+}
+
+#projects header div {
+    display:flex;
+    flex-direction:row;
+}
+#projects header div hr {
+    width:250px;
+    height:0.0001px;
+    border:0.0001px solid gray;
+    border-radius:100px;
+    background:gray;
+}
+#projects header div div {
+    transform:rotate(45deg);
+    background:rgb(255, 220, 24);
+    height:5px;
+    width:5px;
+    margin:0 0.5rem;
+}
+/*----- Section Projects -----*/
