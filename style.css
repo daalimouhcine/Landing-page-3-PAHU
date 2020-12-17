@@ -51,7 +51,7 @@ body {
     letter-spacing: 2px;
     padding:1.32rem 0;
     border-bottom:3px solid transparent;
-    transition:border 300ms;
+    transition:border 300ms linear;
 }
 #nav-list li a:hover {
     border-bottom:4px solid rgb(255, 220, 24);
@@ -260,7 +260,7 @@ body {
     top:200px;
     left:80px;
     padding:10px;
-    transition:border 200ms;
+    transition:border 200ms linear;
 }
 .img-row1-c1 a:hover {
     border:2px solid rgb(113, 149, 0);
@@ -304,7 +304,7 @@ body {
     left:9%;
     transform:translate(0,-50%);
     padding:10px;
-    transition:border 200ms;
+    transition:border 200ms linear;
 }
 .img-row1-c3 a:hover {
     border:2px solid rgb(86,144,153);
@@ -338,7 +338,7 @@ body {
     top:180px;
     left:12%;
     padding:10px;
-    transition:border 200ms;
+    transition:border 200ms linear;
 }
 .img-row2-c2 a:hover {
     border:2px solid rgb(53, 43, 48);
@@ -421,7 +421,7 @@ body {
     overflow: hidden;
     cursor: pointer;
     box-shadow:0px 0px 10px 1px rgb(228, 228, 228);
-    transition:transform 300ms;
+    transition:transform 300ms linear;
 }
 #chair-container .chair-product:hover {
     transform: scale(1.1);
@@ -566,7 +566,7 @@ body {
 /*----- Section Projects -----*/
 #projects {
     width:100%;
-    height: 100vh;
+    height: 124vh;
     background: rgb(243, 243, 243);
 }
 
@@ -603,4 +603,333 @@ body {
     width:5px;
     margin:0 0.5rem;
 }
+
+
+#projects-container {
+    background:rgb(41, 41, 41);
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#projects-container .project {
+    position:relative;
+    margin-top:4px;
+    overflow: hidden;
+}
+#projects-container .project .img-ex {
+    width:265px;
+    height:600px;
+}
+#projects-container .project .rev {
+    transform:scaleX(-1);
+}
+#projects-container .project h4 {
+    position: absolute;
+    top:5%;
+    left:10px;
+    color:white;
+    font-size:1.5rem;
+    font-weight:600;
+    font-family: 'JetBrains Mono', monospace;
+    width:260px;
+    text-transform: uppercase;
+    letter-spacing:3px;
+    z-index:3;
+}
+#projects-container .project p {
+    position:absolute;
+    color:white;
+    width:100%;
+    z-index:3;
+    font-size:1.1rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-family: 'JetBrains Mono', monospace;
+    bottom: 30%;
+    left:-110px;
+    transform: rotateZ(-90deg);
+    z-index:5;
+}
+#projects-container .project .bg { /*----- chadow background -----*/
+    position:absolute;
+    background: rgba(41, 40, 40, 0.411);
+    height:100%;
+    width:100%;
+    left: 0;
+    top:0;
+}
 /*----- Section Projects -----*/
+
+
+
+
+/*----- Section Blog -----*/
+#blogs {
+    width:100%;
+    height: 120vh;
+    background:rgb(247, 247, 247);
+}
+#blogs header {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom:4rem;
+}
+#blogs header h2 {
+    color:rgb(22, 22, 21);;
+    font-size:3rem;
+    text-transform:uppercase;
+    letter-spacing: 2.5px;
+    font-family: 'JetBrains Mono', monospace;
+    margin:5rem 0 0.7rem;
+}
+
+#blogs header div {
+    display:flex;
+    flex-direction:row;
+}
+#blogs header div hr {
+    width:250px;
+    height:0.0001px;
+    border:0.0001px solid gray;
+    border-radius:100px;
+    background:gray;
+}
+#blogs header div div {
+    transform:rotate(45deg);
+    background:rgb(255, 220, 24);
+    height:5px;
+    width:5px;
+    margin:0 0.5rem;
+}
+
+#blogs-container {
+    width:75%;
+    display:grid;
+    grid-template-columns: 31% 31% 31%;
+    grid-template-rows: 460px;
+    justify-content: space-between;
+    margin:0 auto;
+}
+#blogs-container .blog  {
+    width:100%;
+    border:1px solid rgb(207, 207, 207);
+    border-radius:5px;
+    background: white;
+}
+#blogs-container .blog img {
+    width:100%;
+}
+#blogs-container .blog h3 {
+    font-size:1.2rem;
+    text-transform:uppercase;
+    font-family: 'JetBrains Mono', monospace;
+    width: 90%;
+    margin:1rem 0 1rem 0.7rem;
+}
+#blogs-container .blog p {
+    font-size:1rem;
+    font-weight:500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 90%;
+    color:rgb(66, 66, 66);
+    margin:0 auto;
+}
+#blogs-container .blog button {
+    padding:0.7rem;
+    margin:1rem;
+    background:rgb(255, 206, 118);
+    font-size:1.16rem;
+    font-weight:600;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform:uppercase;
+    border:1px solid rgb(224, 224, 224);
+    border-radius:2px;
+    cursor: pointer;
+    outline-color:rgb(252, 180, 46);
+    transition:background 300ms linear;
+}
+#blogs-container .blog button:hover {
+    background-color: rgb(252, 180, 46);
+}
+/*----- Section Blog -----*/
+
+
+
+
+/*----- Section Footer -----*/
+#footer {
+    width:100%;
+    height:400px;
+    background:rgb(17, 16, 16);
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 170px 170px;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding:0 5rem;
+}
+#footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#phon,#visit,#message {
+    padding-left: 2rem;
+}
+
+#footer #phon {
+    border-left:5px solid rgb(252, 180, 46);
+    height:100px;
+    margin:auto 0;
+}
+#footer #phon h5 {
+    font-size:1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family:'JetBrains Mono', monospace;
+    color: rgb(252, 180, 46);
+    margin:0 0 1rem 0;
+}
+#footer #phon b {
+    color:rgb(219, 219, 219);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:400;
+}
+
+
+#footer #visit {
+    border-left:5px solid rgb(252, 180, 46);
+    height:100px;
+    margin:auto 0;
+}
+#footer #visit h5 {
+    font-size:1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family:'JetBrains Mono', monospace;
+    color: rgb(252, 180, 46);
+    margin:0 0 1rem 0;
+}
+#footer #visit b {
+    color:rgb(219, 219, 219);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:400;
+}
+
+
+
+#footer #message {
+    border-left:5px solid rgb(252, 180, 46);
+    height:100px;
+    margin:auto 0;
+}
+#footer #message h5 {
+    font-size:1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family:'JetBrains Mono', monospace;
+    color: rgb(252, 180, 46);
+    margin:0 0 1rem 0;
+}
+#footer #message b {
+    color:rgb(219, 219, 219);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:400;
+}
+
+
+
+#footer #media {
+}
+#footer #media #social-media {
+    display:flex;
+    flex-direction:row;
+    margin:1rem;
+}
+#footer #media #social-media a  {
+    color:white;
+    border-radius:100px;
+    margin:0.3rem;
+    cursor:pointer;
+    transition:color 200ms linear, border 200ms linear;
+}
+#footer #media #social-media i {
+    padding:0.5rem 0.6rem;
+    border-radius:100px;
+    font-size: 1.5rem;
+}
+.ff:hover {
+    color:rgb(0, 0, 255);
+
+}
+.gg:hover {
+    color:rgb(78, 66, 66);
+}
+.tt:hover {
+    color:rgb(95, 132, 245);
+}
+.yy:hover {
+    color:rgb(231, 20, 20);
+}
+
+
+
+#footer #work {
+}
+#footer #work h5 {
+    font-size:1.5rem;
+    letter-spacing: 2px;
+    font-family:'JetBrains Mono', monospace;
+    color:white;
+    margin:0 0 1rem 0;
+}
+#footer #work b {
+    color:rgb(172, 172, 172);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:400;
+}
+
+
+
+#footer #email {
+}
+#footer #email h5 {
+    font-size:1.5rem;
+    letter-spacing: 2px;
+    font-family:'JetBrains Mono', monospace;
+    color:white;
+    margin:0 0 1rem 0;
+}
+#footer #email #input-container {
+    position:relative;
+    width:56%;
+}
+#footer #email #input-container a {
+    font-size:1.1rem;
+    color:rgb(255, 255, 255);
+    position:absolute;
+    top:50%;
+    right:10px;
+    z-index:2;
+    transform:translate(0,-50%);
+    padding:0.5rem;
+}
+#footer #email input {
+    width:220px;
+    padding:0.6rem;
+    background:rgb(17, 16, 16);
+    border:2px solid gray;
+    color:gray;
+    border-radius:2px;
+}
+#footer #email p {
+    color:rgb(172, 172, 172);
+    font-size:0.9rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:400;
+    width:310px;
+    margin:1rem 0 0 0;
+}
+/*----- Section Footer -----*/
