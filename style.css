@@ -222,6 +222,7 @@ body {
     display:flex;
     flex-direction:row;
     background:rgb(238, 235, 235);
+    overflow:hidden;
 }
 #pho img {
     display: block;
@@ -266,14 +267,14 @@ body {
     border:2px solid rgb(113, 149, 0);
 }
 .img-row1-c1 img {
-    width:350px;
+    width:25vw;
     height:595px;
 }
 
 
 
 .img-row1-c2 img {
-    width: 300px;
+    width: 23vw;
     height:280px;
 }
 
@@ -310,7 +311,7 @@ body {
     border:2px solid rgb(86,144,153);
 }
 .img-row1-c3 img {
-    width:699px;
+    width:52vw;
     height:280px;
 }
 
@@ -344,14 +345,14 @@ body {
     border:2px solid rgb(53, 43, 48);
 }
 .img-row2-c2 img {
-    width:689px;
+    width:50.1vw;
     height:310px;
 }
 
 
 
 .img-row2-c3 img {
-    width:310px;
+    width:24vw;
     height:310px;
 }
 /*----- Section pho -----*/
@@ -982,3 +983,74 @@ body {
     font-size:1.5rem;
 }
 /*----- Section Footer -----*/
+
+
+
+/*______ media responsive for mobile and tablet _____*/
+@media (max-width:1120px) {
+/*----- Section Us -----*/
+#us {
+    height: 900px;
+}
+
+
+#us #content {
+    flex-direction:column;
+}
+
+#us #content #float {
+    text-align: right;
+    display: flex;
+    flex-direction:row;
+}
+#us #content .left {
+    margin:3rem 1rem;
+}
+
+
+#us #content .center {
+    margin: 0 auto;
+}
+#us #content .center img {
+    width:350px;
+}
+
+#us #content .right-container {
+    display:flex;
+    flex-direction:row;
+}
+#us #content .right {
+    margin:-1rem 1rem;
+}
+/*----- Section Us -----*/
+
+
+
+
+/*----- Section designers -----*/
+#designers {
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/center-bg.jpg) scroll center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-bottom:1rem;
+    text-align:center;
+}
+
+
+#designers-container {
+    width:90%;
+    grid-template-columns: repeat(auto-fit,250px);
+    grid-template-rows: 350px;
+    margin-bottom:5rem;
+    justify-content: center;
+    align-items: center;
+}
+#designers-container .designer-person {
+    margin-bottom:2rem;
+}
+
+
+/*----- Section designers -----*/
+
+}
