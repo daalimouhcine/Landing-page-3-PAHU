@@ -75,7 +75,7 @@ body {
 /*----- Header -----*/
 #header {
     width: 100%;
-    height:89vh;
+    height:590px;
     background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/header-bg.jpg)   scroll  round;
     background-size: cover;
     display:flex;
@@ -119,7 +119,7 @@ body {
 /*----- Section Us -----*/
 #us {
     width:100%;
-    height: 100vh;
+    height: 600px;
     background-color: rgb(17, 16, 16);
     display:flex;
     flex-direction:column;
@@ -368,6 +368,7 @@ body {
     padding-bottom:8rem;
     background: #f8f8f8;;
 }
+
 #product header {
     display: flex;
     flex-direction:column;
@@ -406,12 +407,11 @@ body {
     width:80%;
     height:70%;
     display:grid;
-    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-columns:repeat(auto-fit,245px);
     grid-template-rows:350px 350px;
     column-gap:2rem;
     row-gap: 2rem;
     justify-content: space-around;
-    
 }
 #chair-container .chair-product {
     background:rgb(255, 255, 255);
@@ -421,7 +421,7 @@ body {
     overflow: hidden;
     cursor: pointer;
     box-shadow:0px 0px 10px 1px rgb(228, 228, 228);
-    transition:transform 300ms linear;
+    transition:transform, background,  300ms linear ;
 }
 #chair-container .chair-product:hover {
     transform: scale(1.1);
@@ -457,12 +457,43 @@ body {
     transform: rotate(-45deg);
 }
 #chair-container .chair-product .new p {
-
     text-transform: uppercase;
     color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     padding:2rem 2rem 0;
+}
+
+
+#chair-container #hover {
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:5;
+    bottom:-100%;
+    left:0;
+    background:rgba(0, 0, 0, 0.452);
+    transition:bottom 300ms linear;
+    pointer-events: none;
+}
+#chair-container #hover ul {
+    width:50%;
+    height:50px;
+    display:flex;
+    flex-direction:row;
+    margin:40% auto;
+    background:rgba(0, 0, 0, 0.582);
+    border-radius:10px;
+}
+#chair-container #hover ul li {
+    width:30px;
+    margin: 0.5rem;
+    cursor:pointer;
+}
+
+.hover-on #hover {
+    bottom:0% !important;
+    cursor: default;
 }
 /*----- Section product -----*/
 
@@ -473,7 +504,7 @@ body {
     background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/center-bg.jpg) scroll center;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 650px;
 }
 
 #designers header {
@@ -566,7 +597,7 @@ body {
 /*----- Section Projects -----*/
 #projects {
     width:100%;
-    height: 124vh;
+    height: 820px;
     background: rgb(243, 243, 243);
 }
 
@@ -667,7 +698,7 @@ body {
 /*----- Section Blog -----*/
 #blogs {
     width:100%;
-    height: 120vh;
+    height: 800px;
     background:rgb(247, 247, 247);
 }
 #blogs header {
@@ -761,7 +792,7 @@ body {
 /*----- Section Footer -----*/
 #footer {
     width:100%;
-    height:400px;
+    height:420px;
     background:rgb(17, 16, 16);
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
@@ -769,6 +800,7 @@ body {
     column-gap: 10px;
     row-gap: 10px;
     padding:0 5rem;
+    position:relative;
 }
 #footer div {
     display: flex;
@@ -931,5 +963,22 @@ body {
     font-weight:400;
     width:310px;
     margin:1rem 0 0 0;
+}
+
+
+#mouhcine {
+    text-align: center;
+}
+#mouhcine p {
+    color:white;
+    position:absolute;
+    font-size:1.1rem;
+    bottom: 10px;
+    left:50%;
+    transform: translate(-50%);
+}
+#mouhcine p span {
+    font-family:Caveat;
+    font-size:1.5rem;
 }
 /*----- Section Footer -----*/
