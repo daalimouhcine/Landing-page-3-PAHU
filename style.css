@@ -41,6 +41,7 @@ body {
 #nav-list {
     display:flex;
     flex-direction: row;
+    overflow: hidden;
 }
 #nav-list li {
     margin:0 1rem;
@@ -74,6 +75,9 @@ body {
     font-size:1.5rem;
     display: none;
 }
+#som-menu {
+    display:none;
+}
 #hiden-menu {
     display:none;
 }
@@ -92,6 +96,7 @@ body {
     flex-direction:column;
     justify-content: center;
     padding-left:10rem;
+    overflow: hidden;
 }
 #header p {
     color:white;
@@ -1045,6 +1050,7 @@ body {
         height:500px;
         width: 350px;
         transition:right 1s linear;
+        z-index: 10;
     }
     #hiden-menu #hiden-nav-list {
         font-size:2rem;
@@ -1146,6 +1152,7 @@ body {
 @media (max-width:970px) {
     #header {
         padding-left:8rem;
+        height:520px;
     }
     
 /*----- Section pho -----*/
@@ -1293,6 +1300,7 @@ body {
 /*----- Header -----*/
 #header {
     padding-left:5rem;
+    height:500px;
 }
 #header p {
     font-size:1.1rem;
@@ -1518,7 +1526,27 @@ body {
 }
 
 @media (max-width:640px) {
+    #header {
+        height:470px;
+    }
+    #logo img {
+        width:180px;
+    }
     
+    #hiden-menu {
+        width: 280px;
+        height:460px;
+    }
+    #X {
+        font-size:1.8rem;
+    }
+    #som-menu li img {
+        width:1.8rem;
+    }
+    #hiden-menu #hiden-nav-list {
+        font-size:1.4rem;
+    }
+
 #pho header h2 {
     font-size:2.5rem;
 }
@@ -1617,7 +1645,30 @@ body {
 }
 
 @media (max-width:500px) {
-    
+    #hiden-menu {
+        width: 280px;
+        height:450px;
+    }
+    #X {
+        font-size:1.6rem;
+    }
+    #hiden-menu #hiden-nav-list {
+        font-size:1.3rem;
+    }
+
+    #right-menu {
+        display:none;
+    }
+    #som-menu {
+        display:flex;
+        flex-direction:row;
+        height:50px;
+        width:150px;
+    }
+    #som-menu li img {
+        width:1.5rem;
+        margin:1.5rem 1rem 0;
+    }
     /*----- Header -----*/
 #header {
     padding-left:3rem;
@@ -1669,57 +1720,86 @@ body {
 
 
 @media (max-width:450px) {
+
+    #navigation {
+        height:70px;
+    }
+    #header {
+        height:400px;
+        padding-left:1rem;
+    }
+    #logo img {
+        width:165px;
+    }
+    #header p {
+        font-size:0.9rem;
+    }
+    #header p::before {
+        height:2px;
+        width:30px;
+    }
+    #header h1 {
+        width:270px;
+        font-size:1.5rem;
+    }
+
+
+
     #footer {
         grid-template-columns:290px;
         grid-template-rows: 170px 170px 170px;
+    }
+    #footer #email #input-container a {
+        right:50px;
     }
 
 
 
     .img-row1-c1 p {
-        font-size:1.29rem;
+        font-size:1.1rem;
         font-weight:500;
         width:100px;
-        top:30px;
-        left:30px;
+        top:20px;
+        left:10px;
     }
     .img-row1-c1 a {
-        top:110px;
-        left:40px;
+        top:80px;
+        left:20px;
         padding:7px;
-        font-size:0.9rem;
+        font-size:0.7rem;
+        width:110px;
     }
     
     .img-row1-c1 img {
         width:25vw;
-        height:360px;
+        height:310px;
     }
     
     
     
     .img-row1-c2 img {
         width: 23vw;
-        height:180px;
+        height:150px;
     }
     
     .img-row1-c3 p {
-        font-size:1.29rem;
+        font-size:1.1rem;
         top:30%;
-        left:5%;
-        width:180px;
+        left:2%;
+        width:150px;
     }
     .img-row1-c3 a {
-        top:57%;
+        top:60%;
         left:8%;
         transform:translate(0,-50%);
         padding:7px;
-        font-size:0.9rem;
+        font-size:0.7rem;
     
     }
     
     .img-row1-c3 img {
         width:52vw;
-        height:180px;
+        height:150px;
     }
     
     
@@ -1728,23 +1808,23 @@ body {
     }
     .img-row2-c2 p {
         width:100px;
-        font-size:1.29rem;
-        top:40px;
-        left:7%;
+        font-size:1.1rem;
+        top:25px;
+        left:6%;
     }
     .img-row2-c2 a {
-        top:120px;
-        left:8%;
+        top:90px;
+        left:7%;
         padding:7px;
-        font-size:0.9rem;
+        font-size:0.7rem;
     }
     .img-row2-c2 img {
         width:50.1vw;
-        height:180px;
+        height:155px;
     }
     .img-row2-c3 img {
         width:24vw;
-        height:180px;
+        height:155px;
     }
 
 }
